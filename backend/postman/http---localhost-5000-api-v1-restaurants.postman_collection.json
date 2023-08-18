@@ -1,0 +1,245 @@
+{
+	"info": {
+		"_postman_id": "c5ff11be-0eb5-4943-82f3-9b49833afd58",
+		"name": "http://localhost:5000/api/v1/restaurants",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25951478"
+	},
+	"item": [
+		{
+			"name": "?zipcode=10012",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/v1/restaurants?zipcode=10012",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"restaurants"
+					],
+					"query": [
+						{
+							"key": "zipcode",
+							"value": "10012"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "?zipcode=10012&page=2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/v1/restaurants?zipcode=10012&page=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"restaurants"
+					],
+					"query": [
+						{
+							"key": "zipcode",
+							"value": "10012"
+						},
+						{
+							"key": "page",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "?cuisine=American",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/v1/restaurants?cuisine=American",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"restaurants"
+					],
+					"query": [
+						{
+							"key": "cuisine",
+							"value": "American"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "?name=food",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/v1/restaurants?name=food",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"restaurants"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "food"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/id/5eb3d668b31de5d588f4292a",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "/cuisines",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "/",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "/review",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n     \"restaurant_id\" : \"5eb3d668b31de5d588f4292a\",\r\n     \"text\" : \"Great Food!\",\r\n     \"user_id\" : \"1654\",\r\n     \"name\" : \"Adam_E\"\r\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/restaurants/review",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"restaurants",
+						"review"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/review",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n     \"review_id\" : \"64d4d02819b68e278fa93723\",\r\n     \"text\" : \"The food was Decent.\",\r\n     \"user_id\" : \"1654\",\r\n     \"name\" : \"Adam_E\"\r\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/restaurants/review",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"restaurants",
+						"review"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/review?id=64d4cf7b030181ac77c19366",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n     \"user_id\" : \"1654\",\r\n     \"name\" : \"Adam_E\"\r\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/restaurants/review?id=64d4cf7b030181ac77c19366",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"restaurants",
+						"review"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "64d4cf7b030181ac77c19366"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
